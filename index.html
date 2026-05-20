@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Sports Meet 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Campus Sports Meet 2026</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sports.html">Sports Events</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="banner-content">
+            <h2>Welcome to Campus Sports Meet 2026</h2>
+            <p>Join the excitement, compete with passion, and celebrate sportsmanship.</p>
+        </div>
+    </section>
+    <main class="container">
+        <section class="c1">
+            <h2>About the Event</h2>
+            <p>
+                Campus Sports Meet 2026 is the annual inter-department sports competition conducted by Amrita.It is one of the best events in the college and it encourages the students both mentally and physically 
+            </p>
+        </section>
+        <section class="c1">
+            <h2>Important Announcements</h2>
+            <ul>
+                <li>Last day of registeration july 1, 2026.</li>
+                <li>Participants must carry college ID cards and students are expected to wear formals and main decorum</li>
+                <li>Free lunch will be provied throughtout the event</li>
+                <li>Classes will be conducted as usaual and ODS will be provided </li>
+            </ul>
+        </section>
+        <section class="c1">
+            <h2>Current Date and Time</h2>
+            <p id="dtime"></p>
+        </section>
+    </main>
+    <footer>
+        <p>Department of Physical Education | Contact: sportsmeet2026@college.edu</p>
+    </footer>
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            document.getElementById("dtime").innerHTML = now.toLocaleString();
+        }
+        updateDateTime();
+        setInterval(updateDateTime, 2000);
+    </script>
+</body>
+</html>
